@@ -6,7 +6,7 @@
 
 /* ============================================= */
 
-@media (min-width: 768px) {
+@media #{$brk-med} {
     .container {
         max-width: 1400px;
         display: block;
@@ -27,7 +27,7 @@
         margin-top: 0;
         align-items: center;
     }
-    [class^=col] + [class^=col] {
+    [class^=col]+[class^=col] {
         margin-left: 10px;
     }
     .col-1 {
