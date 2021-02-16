@@ -27,6 +27,5 @@
     background-color: $bg-color;
     &:hover {
         background-color: lighten($bg-color, 15%);
-        border: 2px solid black;
     }
 }
