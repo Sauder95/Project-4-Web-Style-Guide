@@ -1,0 +1,32 @@
+/* ============================================= */
+
+
+/*              MIXINS                    */
+
+
+/* ============================================= */
+
+@mixin btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $primary-color;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition: .5s ease-in-out;
+    @content;
+    @media #{$brk-med} {
+        padding: 10px 30px;
+        margin-left: 10px;
+    }
+}
+
+@mixin btn-color ($bg-color) {
+    background-color: $bg-color;
+    &:hover {
+        background-color: lighten($bg-color, 15%);
+        border: 2px solid black;
+    }
+}

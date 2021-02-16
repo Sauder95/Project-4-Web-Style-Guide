@@ -1,47 +1,43 @@
-// -------BUTTONS------------------
-.btn {
-    margin-top: 15px;
-    width: 100%;
-    color: $primary-color;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
-    transition-property: background-color;
-    transition: .5s ease-in-out;
-}
+/* ============================================= */
 
+
+/*              BUTTONS                    */
+
+
+/* ============================================= */
+
+// .btn {
+//     margin-top: 15px;
+//     width: 100%;
+//     color: $primary-color;
+//     border: none;
+//     padding: 10px 0;
+//     text-transform: uppercase;
+//     border-radius: 5px;
+//     transition-property: background-color;
+//     transition: .5s ease-in-out;
+// }
 .default {
-    background-color: $accent-color-2;
-    &:hover {
-        background-color: lighten($accent-color-2, 15%);
-    }
+    @include btn;
+    @include btn-color($accent-color-2);
 }
 
 .error {
-    background-color: $error;
-    &:hover {
-        background-color: lighten($error, 15%);
-    }
+    @include btn;
+    @include btn-color($error);
 }
 
 .info {
-    background-color: #927bc1;
-    &:hover {
-        background-color: lighten(#927bc1, 15%);
-    }
+    @include btn;
+    @include btn-color(#927bc1);
 }
 
 .success {
-    background-color: #63cc82;
-    &:hover {
-        background-color: lighten(#63cc82, 15%);
-    }
+    @include btn;
+    @include btn-color(#63cc82);
 }
 
 .warning {
-    background-color: $warning;
-    &:hover {
-        background-color: lighten($warning, 15%);
-    }
+    @include btn;
+    @include btn-color($warning);
 }
